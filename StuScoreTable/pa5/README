@@ -1,0 +1,56 @@
+Name: Peng Cai	
+USC loginid:pengcai
+CSCI 455 PA5
+Fall 2014
+
+----------------------------------------------
+CERTIFY IT'S YOUR WORK
+
+"I certify that the work submitted for this assignment does not
+violate USC's student conduct code.  In particular, the work is my
+own, not a collaboration, and does not involve code created by other
+people, except for the the resources explicitly mentioned in the CS 455
+Course Syllabus.  And I did not share my solution or parts of it with
+other students in the course."
+
+Initial below to "sign" the above statement:
+
+			Peng Cai
+----------------------------------------------
+ACKNOWLEDGE ANY OUTSIDE SOURCES
+
+List here any code you submitted for this assignment that was written
+with significant help of a course staff member, or code used from the
+textbook.  Be specific about what methods or algorithms are involved,
+and what sections of the textbook are involved (if applicable): [you do
+not need to list any of the code that we wrote for the assignment,
+i.e., the contents of the starter files for the assignment]
+
+
+In the remove method of Table.cpp, I use these code found from the book of the library, the technic thus are similar:
+   
+    while (del != NULL) {
+        if (del->key == key) {
+            pre->next= del->next;//If the key is found, making the one before the key link to the one after the key;
+            if (del == tail) {//If the key at the end of the list, making the one ahead of the key become the end of the list;
+                tail = pre;
+                numBucket--;
+            }
+            delete del;
+            break;
+        }
+        pre = del;//To iterate the whole list;
+        del = del->next;
+    }
+----------------------------------------------
+KNOWN BUGS or LIMITATIONS:
+
+
+Limitation: The Table cannot tell whether a name parameter is actually a name, it can be numbers in string format. 
+----------------------------------------------
+ANY OTHER NOTES FOR THE GRADER:
+
+
+
+
+
